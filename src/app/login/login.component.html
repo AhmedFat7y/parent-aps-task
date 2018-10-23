@@ -1,3 +1,44 @@
-<p>
-  login works!
-</p>
+<section class="fluid-container main-container">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-lg-10 col-xlg-8">
+        <div class="row login no-gutters">
+          <div class="col-6 login__banner-wrapper">
+          <picture>
+            <source srcset="assets/login/banner.jpg, assets/login/banner@2x.jpg 2x, assets/login/banner@3x.jpg 3x">
+            <img src="assets/login/banner.jpg" alt="Login Banner">
+          </picture>
+          </div>
+          <main class="col-6 login__content">
+            <header class="login__header">
+              <h2 class="login__title">
+                Welcome Back!
+              </h2>
+              <h3 class="login__subtitle">
+                Please login to access your <span class="featured">Spaces</span> Dashboard
+              </h3>
+            </header>
+            <form class="justify-self-center login__form">
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" aria-describedby="username-help" placeholder="Username...">
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password">
+              </div>
+              <div class="login__form__actions row">
+                <div class="col-md-6 text-left">
+                  <a href="/forgot">Forgot Password?</a>
+                </div>
+                <div class="col-md-6 text-right">
+                  <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+              </div>
+            </form>
+          </main>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
