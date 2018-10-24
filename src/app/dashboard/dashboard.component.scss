@@ -1,0 +1,27 @@
+.dashboard {
+  &__header {
+    background-color: #dedede;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    padding: 1rem 0;
+    .breadcrumb {
+      background-color: transparent;
+      font-size: 0.8rem;
+      margin: 0;
+      padding: 0;
+      color: #8e44ad;
+      > .breadcrumb-item > a {
+        color: #8e44ad;
+      }
+      > .breadcrumb-item::before {
+        color: #34495e;
+      }
+    }
+    &__content {
+      margin-top: 0.8rem;
+    }
+    &__title {
+      font-size: 2rem;
+      color: #34495e;
+    }
+  }
+}
