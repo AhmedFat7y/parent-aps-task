@@ -1,12 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from '@components/main/app.component';
 import { HeaderComponent } from '@components/header/header.component';
 import { LoginComponent } from '@components/login/login.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,7 @@ import { LoginComponent } from '@components/login/login.component';
   ],
   imports: [
     BrowserModule,
-    NgbModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],
