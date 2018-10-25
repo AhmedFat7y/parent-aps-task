@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="row">
+    <div [ngClass]="{'col-md-9': selectedID, 'col-md-12': !selectedID}">
+      <div class="users">
+        <header class="users__header">
+          <div class="row">
+            <div class="col-md-8">
+              <span>User</span>
+            </div>
+            <div class="col-md-4">
+              <span>Actions</span>
+            </div>
+          </div>
+        </header>
+        <div class="users__list">
+          <a class="list__item" *ngFor="let user of usersList" (click)="onItemClick(user.id)" [ngClass]="{active: selectedID === user.id}">
+            <div class="row">
+              <div class="col-md-10">
+                <div class="list__item__content">
+                  <img class="list__item__img" src="{{user.avatar}}" alt="Logo">
+                  <span class="list__item__name">{{user.name}}</span>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="list__item__actions">
+                  <button class="btn material-icons icon">edit</button>
+                  <button class="btn material-icons icon">delete</button>
+                  <i class="material-icons icon arrow">chevron_right</i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3" *ngIf="selectedID">
+      <div class="profile" >
+        it works now
+      </div>
+    </div>
+  </div>
+</div>
